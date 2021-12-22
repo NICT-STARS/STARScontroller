@@ -12,3 +12,9 @@ https://www.k2go.jp/public/STARS/controller/
 BSD2
 
 ------------
+
+### 主な機能
+
+------------
+
+### 導入方法
