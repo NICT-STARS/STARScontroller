@@ -3,7 +3,7 @@ STARScontroller が各Web アプリケーションを同期する為には
 
 
 ### ドキュメント
-https://nict-stars.github.io/STARScontroller/{:target="_blank"}
+<a href="https://nict-stars.github.io/STARScontroller/" target="_blank">https://nict-stars.github.io/STARScontroller/</a>	
 
 ------------
 
