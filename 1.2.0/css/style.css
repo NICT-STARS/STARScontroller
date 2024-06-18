@@ -1,0 +1,38 @@
+/******************************************************************************/
+/* k2go STARScontroller                                                       */
+/* version   : 1.2.0                                                          */
+/* author    : Inoue Computer Service.                                        */
+/* Copyright (c) k2go. All rights reserved.                                   */
+/* See License.txt for the license information.                               */
+/******************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap');
+/* html, body, iframe { width:100%; height:100%; margin:0; padding:0; border:none; overflow:hidden; } */
+body {
+	background: #292d3e;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+}
+
+h1 {
+	display: block;
+	font-family: 'Rubik', sans-serif;
+	font-size: 12vw;
+	font-weight: 700;
+	margin: 0;
+	padding: 100px 0 0 0;
+	width: 100%;
+	
+}
+p {
+	display: block;
+	font-family: 'Rubik', sans-serif;
+	font-size: 4.2vw;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+

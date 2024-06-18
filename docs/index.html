@@ -17,9 +17,53 @@
     <h1>STARScontroller 開発者向けドキュメント</h1>
   </div>
 
+  <div class="cols">
+
+    <h2>親側概要</h2>
+
+    <p>
+      STARScontroller は STARScontrollerメソッドを実装された Web アプリケーションを同期させるためのライブラリです。<br>
+      設定ファイル (env.js) に設定を記述することにより、子側アプリをSTARS同期します。
+    </p>
+
+  </div>
 
   <div class="cols">
-    <h2>概要</h2>
+
+    <h2>設定ファイル</h2>
+
+ <pre style="width: 97%; margin: 20px auto 0;">
+  // 設定例
+  var $Env = {
+    version: "2021092702",
+    showLogConsole: true,
+    interval: 100,
+    mainApp: "himawariJp",
+    activeApp: "himawariJp",
+    apps: {
+      himawariJp: {
+        type: "himawariJp",
+        url: "/path/to/app/hogehoge.html,
+        windowLayout: { left: 0, top: 0, width: 0.495, height: 0.45 },
+        windowFeatures:
+          "toolbar=yes,location=no,status=yes,menubar=yes,scrollbars=yes,resizable=yes",
+      },
+      himawari01: {
+        type: "himawariEn",
+        url: "/path/to/app/hogehoge.html,
+        windowLayout: { left: 0.25, top: 0.51, width: 0.5, height: 0.395 },
+        windowFeatures:
+          "toolbar=yes,location=no,status=yes,menubar=yes,scrollbars=yes,resizable=yes",
+      },
+    },
+  };
+</pre>
+
+  </div>
+
+
+  <div class="cols">
+    <h2>子側概要</h2>
 
     <p>
       STARScontroller が各Web アプリケーションを同期する為には、STARScontroller側から各 Web

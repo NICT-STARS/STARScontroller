@@ -1,0 +1,98 @@
+/******************************************************************************/
+/* k2go STARScontroller                                                       */
+/* version   : 1.2.0                                                          */
+/* author    : Inoue Computer Service.                                        */
+/* Copyright (c) k2go. All rights reserved.                                   */
+/* See License.txt for the license information.                               */
+/******************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+html, body, iframe { width:100%; height:100%; margin:0; padding:0; border:none; overflow:hidden; }
+body {
+	background: #292d3e;
+	font-family: "Helvetica Neue",
+	Arial,
+	"Hiragino Kaku Gothic ProN",
+	"Hiragino Sans",
+	Meiryo,
+	sans-serif;
+}
+
+h1 {
+	display: block;
+	font-family: 'Rubik', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0;
+	padding: 100px 0 10px 0;
+	width: 100%;
+	color: #fff;
+	text-align: center
+	
+}
+
+p {
+	display: block;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	animation: textAnime 1s ease-in-out infinite;
+}
+
+@keyframes textAnime{
+	0%  {color: #fff}
+	50% {color: #555}
+	100%{color: #fff}
+}
+
+.btn-wrapper {
+	width: 300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+	margin: 30px auto 0
+}
+
+.btn{
+	display: none;
+	text-align: center;
+	font-size: 11px;
+	color: #fff;
+	width: 115px;
+	height: 32px;
+	line-height: 32px;
+	background-color: rgba(255,255,255,0.05);
+	border: solid 1px #fff;
+	margin: 10px auto 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+
+.btn:hover{
+	background-color: #555
+}
+
+#btn-close::before {
+	content: "";
+	width: 22px;
+	height: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(./ic_close.svg) no-repeat left -1px;
+	background-size: contain
+}
+
+#btn-open::before {
+	content: "";
+	width: 22px;
+	height: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(./ic_open.svg) no-repeat left -1px;
+	background-size: contain
+}
